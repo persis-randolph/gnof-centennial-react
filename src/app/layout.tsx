@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title: "GNOF Centennial (React)",
@@ -18,7 +20,11 @@ export default function RootLayout({
 				<link rel="preconnect" href="https://use.typekit.net" crossOrigin="" />
 				<link rel="stylesheet" href="https://use.typekit.net/lap8jer.css" />
 			</head>
-			<body className="antialiased">{children}</body>
+			<body className="antialiased min-h-screen flex flex-col bg-gray-50">
+				<Header />
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }

@@ -26,3 +26,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center; /* matches Vue’s #app style */
 }
+
+h2 {
+  color: #041e42;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+p {
+  color: #041e42;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+button {
+  padding: 20px;
+  border: none;
+  font: inherit;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #1d428a;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #234fa7;
+}
